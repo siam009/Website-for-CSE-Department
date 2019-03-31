@@ -1,0 +1,22 @@
+.bk-color{
+background-color: #98d9c1;
+}
+.cse{
+  margin-right: 30px;
+  margin-left: 50px;
+  width:6rem;
+  height:7rem;
+  font-weight: italic;
+  float:left;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  width: 100%;
+  padding-top: 60px;
+}
