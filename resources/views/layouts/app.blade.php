@@ -24,11 +24,11 @@
 
 <body data-spy="scroll" data-target="#navbarResponsive" >
 
-  <div class="bg-info row">
+  <div class=" row" style="background:#00142d">
     <img class="cse pt-3 pb-2" src="{{asset('image/logo.jpg')}}">
     <div class="col">
-      <h3 class="display-5 pt-4"><b>Department of Computer Science and Engineering</b></h3>
-      <h4 class="display-5 "><b>Sylhet Engineering College</b></h4>
+      <h3 class="display-5 pt-4 text-success  " ><b>Department of Computer Science and Engineering</b></h3>
+      <h4 class="display-5   " style="color: #999"><b>Sylhet Engineering College</b></h4>
     </div>
   </div>
 
