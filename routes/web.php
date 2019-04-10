@@ -47,7 +47,7 @@ Route::get('/result','ShowResultController@input')->name('input');
 /// AdminLoginRegister
 
 Route::prefix('admin')->group(function () {
-  
+
  Route::get('/dashboard', 'AdminController@index')->name('admin.dashboard');
   Route::get('/register', 'AdminController@create')->name('admin.register');
   Route::post('/register', 'AdminController@store')->name('admin.register.store');
@@ -57,10 +57,33 @@ Route::prefix('admin')->group(function () {
   Route::get('/', 'AdminController@index')->name('admin.dashboard');
 });
 
+
+
+
 ///MyRoutes for Admin Panel
+
 
 Route::get('/adminHome','Auth\AdminController@adminHome')->name('adminHome');
 
+
+
+Route::post('/societyaction','Admin\insertFormController@storeDevice');
+Route::post('/teacheraction','Admin\insertFormController@teacher');
+Route::post('/staffaction','Admin\insertFormController@staff');
+Route::post('/othersaction','Admin\insertFormController@others');
+Route::post('/noticeaction','Admin\insertFormController@notice');
+Route::post('/researchaction','Admin\insertFormController@research');
+Route::post('/galleryaction','Admin\insertFormController@gallery');
+
+// admin cse society part
+
+Route::get('/adminHome/insert_society','Admin\insertFormController@insertSociety')->name('insertSociety');
+Route::get('/adminHome/insert_teacher','Admin\insertFormController@insertTeacher')->name('insertTeacher');
+Route::get('/adminHome/insert_staff','Admin\insertFormController@insertStaff')->name('insertStaff');
+Route::get('/adminHome/insert_notice','Admin\insertFormController@insertNotice')->name('insertNotice');
+Route::get('/adminHome/insert_others','Admin\insertFormController@insertOthers')->name('insertOthers');
+Route::get('/adminHome/insert_research','Admin\insertFormController@insertResearch')->name('insertResearch');
+Route::get('/adminHome/insert_gallery','Admin\insertFormController@insertGallery')->name('insertGallery');
 
 // admin insert view part (get)
 
@@ -117,9 +140,17 @@ Route::post('/adminHome/update/res_4_1','Admin\UpdateController@Update_4_1')->na
 Route::post('/adminHome/update/res_4_2','Admin\UpdateController@Update_4_2')->name('update_4_2');
 
 
+
 ///admin delete part(get)
 
 Route::get('/adminHome/delete_res','Admin\DeleteController@view_delete_res')->name('view_delete_res');
 
 /// admin delete part(post)
 Route::post('/adminHome/delete_res','Admin\DeleteController@delete_res')->name('delete_res');
+
+
+///  admin others form part
+Route::get('/adminHome/research_news','Admin\FormController@view_research_news')->name('view_research_news');
+Route::post('/adminHome/research_news','Admin\FormController@research_news')->name('post_research_news');
+
+// admin notice part
