@@ -9,7 +9,7 @@
     <div class="col-lg-3 col-md-4 col-xs-6 " style="background: black">
         <div class="card-deck">
           <div class="card">
-              <img class="round  img-fluid thumb" src="{{asset('image/Teacher/'.$teacher->img)}}" style="height: 250px;width: 300px">
+              <img class="round  img-fluid thumb" src="{{asset($teacher->img)}}" style="height: 250px;width: 300px">
               <div class="container">
                 <h6><b>{{$teacher->name}}</b></h6>
                 <h6><small><strong>{{$teacher->designation}}</strong></small></h6>

@@ -11,7 +11,7 @@
 
       <div class="card-deck">
         <div class="card">
-      <img class="round  img-fluid thumb" src="{{asset('image/'.$society->img)}}" style="height: 300px;width: 500px">
+      <img class="round  img-fluid thumb" src="{{asset($society->img)}}" style="height: 300px;width: 500px">
       <div class="container">
         <h6><b>{{$society->title}}</b></h6>
         <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#information{{$society->id}}">Read More</button>

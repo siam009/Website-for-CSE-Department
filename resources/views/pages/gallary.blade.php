@@ -6,7 +6,7 @@
     @foreach($gallary as $gallary)
      <div class="col-lg-3 col-md-4 col-sm-6">
       <a href="{{asset('image/gallary/'.$gallary->img)}}" class="d-block mb-4 h-100">
-        <img class="img-fluid img-thumbnail" src="{{asset('image/gallary/'.$gallary->img)}}" alt="" style="height:210px; width:280px">
+        <img class="img-fluid img-thumbnail" src="{{asset($gallary->img)}}" alt="" style="height:210px; width:280px">
       </a>
     </div>
    <!-- <div class="col-lg-3 col-md-4 col-sm-6">
