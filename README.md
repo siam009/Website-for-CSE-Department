@@ -44,7 +44,7 @@ For windows user, you need to add laravel path to Environment variable . Follow 
 ### Go to this link  from browser and **bombed.**
 
 For Admin purposes, go to http://127.0.0.1:8000/admin   <br/>
-- Email:  sagar@yahoo.com <br/>
+- Email:  siam@yahoo.com <br/>
 - Password: 12345678 <br/>
     
                  
